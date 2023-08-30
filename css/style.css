@@ -194,7 +194,6 @@ button:hover {
 #profile {
   padding: 100px 0;
 }
-/* '../assets/Kampus-UMN.jpg' */
 
 .profile-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(5, 11, 15)), url('../assets/harvard.jpg');
