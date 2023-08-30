@@ -3,13 +3,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputForm = document.getElementById("inputForm");
   const displayContainer = document.getElementById("displayContainer");
   const navLinks = document.querySelectorAll("nav ul li a");
+  const images = document.querySelectorAll(".home-img");
+  let currentIndex = 0;
+
+  // Function to show next image in the slideshow
+  function showNextImage() {
+    images[currentIndex].style.display = "none";
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].style.display = "block";
+  }
+
+  // Initial display of images and slideshow setup
+  images[currentIndex].style.display = "block";
+  setInterval(showNextImage, 3000); // Change image every 5 seconds
 
   navLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
       const targetId = link.getAttribute("href");
       const targetSection = document.querySelector(targetId);
-      
+
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
@@ -31,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Populate display container with saved data
   const displayContent = `
     <p><span class="label">Current Time:</span> <span class="value">${
-    formData.currentTime || "..."
+      formData.currentTime || "..."
     }</span></p>
     <p><span class="label">Name:</span> <span class="value">${
       formData.name || "..."
@@ -46,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       formData.about || "..."
     }</span></p>
 
-`;
+  `;
   displayContainer.innerHTML = `<div class="display-content">${displayContent}</div>`;
 
   inputForm.addEventListener("submit", function (event) {

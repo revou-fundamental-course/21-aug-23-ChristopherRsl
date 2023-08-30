@@ -84,6 +84,9 @@ section {
 .border-img {
   border: 2px solid #000000;
 }
+p{
+  font-size: 20px;
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -194,28 +197,29 @@ button:hover {
 /* '../assets/Kampus-UMN.jpg' */
 
 .profile-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(14, 34, 58, 0.5)), url('../assets/Kampus-UMN.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(5, 11, 15)), url('../assets/harvard.jpg');
   background-size: cover;
   background-position: center;
-
+  
   padding: 100px 0;
-  color: white; 
+  color: whitesmoke; 
+  
 }
 
 .profile-content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto 30px;
   padding: 0 20px;
   text-align: center;
 }
 
 .profile-content h1 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
 .profile-content p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
