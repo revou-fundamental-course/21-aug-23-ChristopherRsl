@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher Russell</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img
+          src="assets/revou.png"
+          class="nav-img"
+          alt="revou"
+          width="50"
+          height="50"
+        />
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#achievement">Achievement</a></li>
+          <li><a href="#message">Message Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section id="home">
+        <h1 id="welcomeMessage">Hi there, Welcome To Website</h1>
+        <p>ini adalah website latihan pertama</p>
+        <a href="https://www.umn.ac.id" class="image-link" target="_blank">
+          <img
+            src="assets/home.png"
+            class="home-img"
+            alt="revou"
+            width="1366"
+            height="578"
+          />
+        </a>
+      </section>
+
+      <section id="profile" class="profile-section">
+        <div class="profile-content">
+          <h1>About Our School</h1>
+          <p>Universitas Multimedia Nusantara is a private university located in Gading Serpong, Tangerang, Banten, Indonesia. The university was founded by Kompas Gramedia Group on 25 November 2005 and officially launched in a ceremony at the Hotel Santika, Jakarta on 20 November 2006.</p>
+        </div>
+        <div class="profile-content">
+          <h1>Mission</h1>
+          <p>Universitas Multimedia Nusantara becomes an outstanding university in ICT at both national and international levels, which produces graduates that are internationally-minded and highly competent in their field equipped with an entrepreneurial spirit and noble character.</p>
+        </div>
+        <div class="profile-content">
+          <h1>Vission</h1>
+          <p>To participate in educating the nation and promoting the nation’s welfare by providing higher education and implementing the Tridarma of Higher Education (Education, Research, and Community Service) to improve the quality of Indonesia’s human resources.</p>
+        </div>
+      </section>
+      <section id="achievement">
+        <h1>Our Facilitation</h1>
+        <div class="flex-container">
+          <div class="image-container">
+            <div class="rounded-image">
+              <img
+                src="assets/library.jpg"
+                alt="revou"
+                class="border-img"
+                width="300"
+                height="300"
+              />
+            </div>
+            <p class="caption">Library</p>
+          </div>
+          <div class="image-container">
+            <div class="rounded-image">
+              <img
+                src="assets/green_screen_studio.jpg"
+                alt="revou"
+                class="border-img"
+                width="300"
+                height="300"
+              />
+            </div>
+            <p class="caption">Green Screen Studio</p>
+          </div>
+          <div class="image-container">
+            <div class="rounded-image">
+              <img
+                src="assets/Kompas_corner.jpg"
+                alt="revou"
+                class="border-img"
+                width="300"
+                height="300"
+              />
+            </div>
+            <p class="caption">Kompas Corner</p>
+          </div>
+          <div class="image-container">
+            <div class="rounded-image">
+              <img
+                src="assets/lecture_theater.jpg"
+                alt="revou"
+                class="border-img"
+                width="300"
+                height="300"
+              />
+            </div>
+            <p class="caption">Lecture Theather</p>
+          </div>
+          <div class="image-container">
+            <div class="rounded-image">
+              <img
+                src="assets/skystar_venture.jpg"
+                alt="revou"
+                class="border-img"
+                width="300"
+                height="300"
+              />
+            </div>
+            <p class="caption">Skystar Venture</p>
+          </div>
+          
+          
+        </div>
+      </section>
+
+      <section id="message">
+        <h1>Message Us</h1>
+        <div class="flex-container">
+          <div class="form-container">
+            <form id="inputForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="birthday">Date of Birth:</label>
+              <input type="date" id="birthday" name="birthday" required />
+
+              <label>Gender:</label>
+              <label
+                ><input type="radio" name="gender" value="Male" required/> Male</label
+              >
+              <label
+                ><input type="radio" name="gender" value="Female" required/>
+                Female</label
+              >
+
+              <label for="about">About:</label>
+              <textarea id="about" name="about" rows="4" required></textarea>
+
+              <button type="submit" id="submitButton">Submit</button>
+            </form>
+          </div>
+          <div  id="displayContainer" class="display-container">
+            <div class="display-content">
+              <p><span class="label">Current Time:</span> <span class="value">...</span></p>
+              <p><span class="label">Name:</span> <span class="value">...</span></p>
+              <p><span class="label">Birthday:</span> <span class="value">...</span></p>
+              <p><span class="label">Gender:</span> <span class="value">...</span></p>
+              <p><span class="label">About:</span> <span class="value">...</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+        <p class="footer-text">Created By Christopher Russell</p>
+      </footer>
+      <script src="js/script.js"></script>
+  </body>
+</html>

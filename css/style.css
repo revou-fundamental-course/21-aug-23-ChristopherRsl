@@ -1,0 +1,222 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Tahoma, Serif;
+  margin: 0; 
+  padding: 0;
+  overflow-x: hidden;
+  background-color: burlywood;
+  width: 100vw; 
+  height: 100vh; 
+  
+}
+nav {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #000000;
+  background-color: bisque;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 128px;
+  list-style: none; 
+}
+
+nav li {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: white; 
+}
+
+nav li a {
+  text-decoration: none; 
+  color: black; 
+}
+
+
+section {
+  padding-left: 128px;
+  padding-right: 128px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+}
+.image-link {
+  margin: auto;
+  border: 2px solid #000000;
+}
+.home-img {
+  transition: transform 0.3s ease; 
+}
+
+.home-img:hover {
+  transform: scale(1.05); 
+}
+
+.border-img {
+  border: 2px solid #000000;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.rounded-image {
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+.rounded-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-container {
+  min-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(44, 71, 153);
+}
+.display-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #F5F3E7;
+  border-radius: 5px;
+}
+
+.display-content {
+  line-height: 1.5;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  color: black;
+  text-align: justify;
+}
+.footer {
+  background-color: bisque;
+  color: black;
+  text-align: right;
+  padding: 30px;
+  bottom: 0;
+}
+
+.footer-text {
+  margin: 0;
+}
+#profile {
+  padding: 100px 0;
+}
+/* '../assets/Kampus-UMN.jpg' */
+
+.profile-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(14, 34, 58, 0.5)), url('../assets/Kampus-UMN.jpg');
+  background-size: cover;
+  background-position: center;
+
+  padding: 100px 0;
+  color: white; 
+}
+
+.profile-content {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.profile-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profile-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
