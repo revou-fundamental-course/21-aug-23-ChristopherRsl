@@ -3,9 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputForm = document.getElementById("inputForm");
   const displayContainer = document.getElementById("displayContainer");
   const navLinks = document.querySelectorAll("nav ul li a");
-  const images = document.querySelectorAll(".home-img");
+  const images = [
+    document.getElementById("hvrd1"),
+    document.getElementById("hvrd2"),
+    document.getElementById("hvrd3"),
+  ];
   let currentIndex = 0;
 
+  // Hide all images except the first one
+  for (let i = 1; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
   // Function to show next image in the slideshow
   function showNextImage() {
     images[currentIndex].style.display = "none";
@@ -34,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Update the welcome message if a name is provided
   if (userName) {
-    welcomeMessage.textContent = `Hi ${userName}, Welcome To Website`;
+    welcomeMessage.textContent = `Hi ${userName}, Welcome To Harvard Website`;
   }
 
   // Load form data from local storage if available

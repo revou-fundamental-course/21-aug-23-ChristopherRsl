@@ -27,10 +27,15 @@
 
     <div class="container">
       <section id="home">
-        <h1 id="welcomeMessage">Hi there, Welcome To Website</h1>
-        <p class="text-medium">Where world-class professors, innovative research, and a dynamic student community come together to advance education and foster change in the world.</p>
+        <h1 id="welcomeMessage">Hi there, Welcome To Harvard Website</h1>
+        <p class="text-medium">
+          Where world-class professors, innovative research, and a dynamic
+          student community come together to advance education and foster change
+          in the world.
+        </p>
         <a href="https://www.harvard.edu" class="image-link" target="_blank">
           <img
+            id="hvrd1"
             src="assets/img-1.jpg"
             class="home-img"
             alt="revou"
@@ -38,6 +43,7 @@
             height="578"
           />
           <img
+            id="hvrd2"
             src="assets/img-2.jpg"
             class="home-img"
             alt="revou"
@@ -45,6 +51,7 @@
             height="578"
           />
           <img
+            id="hvrd3"
             src="assets/img-3.jpg"
             class="home-img"
             alt="revou"
@@ -57,22 +64,47 @@
       <section id="profile" class="profile-section">
         <div class="profile-content">
           <h1>About Our School</h1>
-          <p>Those who venture here—to learn, research, teach, work, and grow—join nearly four centuries of students and scholars in the pursuit of truth, knowledge, and a better world.</p>
+          <p>
+            Those who venture here—to learn, research, teach, work, and
+            grow—join nearly four centuries of students and scholars in the
+            pursuit of truth, knowledge, and a better world.
+          </p>
         </div>
         <div class="profile-content">
           <h1>Mission</h1>
-          <p>Harvard University's mission is rooted in the advancement of knowledge, wisdom, and innovation through rigorous research, dedicated teaching, and impactful public service. With an unwavering commitment to excellence and the highest standards of scholarship, Harvard aims to empower students to become leaders equipped with critical thinking skills and informed judgment. The university's diverse academic community seeks to prepare individuals for a purposeful life, meaningful work, and influential leadership across various sectors.</p>
+          <p>
+            Harvard University's mission is rooted in the advancement of
+            knowledge, wisdom, and innovation through rigorous research,
+            dedicated teaching, and impactful public service. With an unwavering
+            commitment to excellence and the highest standards of scholarship,
+            Harvard aims to empower students to become leaders equipped with
+            critical thinking skills and informed judgment. The university's
+            diverse academic community seeks to prepare individuals for a
+            purposeful life, meaningful work, and influential leadership across
+            various sectors.
+          </p>
         </div>
         <div class="profile-content">
           <h1>Vission</h1>
-          <p>Harvard University envisions itself as a global leader in education, setting the standard for nurturing the leaders of the 21st century. The university strives to establish an exceptional environment that fosters unparalleled learning experiences, transformative discoveries, and intellectual growth. Through this vision, Harvard aims to educate and shape principled leaders who excel in academia, government, business, and nonprofit sectors. The institution's dedication to profound research, respect for diversity, and commitment to collaboration all contribute to its aspiration to create positive and lasting impacts on a global scale.</p>
+          <p>
+            Harvard University envisions itself as a global leader in education,
+            setting the standard for nurturing the leaders of the 21st century.
+            The university strives to establish an exceptional environment that
+            fosters unparalleled learning experiences, transformative
+            discoveries, and intellectual growth. Through this vision, Harvard
+            aims to educate and shape principled leaders who excel in academia,
+            government, business, and nonprofit sectors. The institution's
+            dedication to profound research, respect for diversity, and
+            commitment to collaboration all contribute to its aspiration to
+            create positive and lasting impacts on a global scale.
+          </p>
         </div>
       </section>
       <section id="achievement">
         <h1>Our Facilitation</h1>
         <div class="flex-container">
           <div class="image-container">
-            <div class="rounded-image">
+            <div class="rounded-image home-img">
               <img
                 src="assets/art_museum.jpg"
                 alt="revou"
@@ -84,7 +116,7 @@
             <p class="caption">Harvard Art Museums</p>
           </div>
           <div class="image-container">
-            <div class="rounded-image">
+            <div class="rounded-image home-img">
               <img
                 src="assets/stadium.jpg"
                 alt="revou"
@@ -96,7 +128,7 @@
             <p class="caption">Harvard Stadium</p>
           </div>
           <div class="image-container">
-            <div class="rounded-image">
+            <div class="rounded-image home-img">
               <img
                 src="assets/science_center.jpg"
                 alt="revou"
@@ -108,7 +140,7 @@
             <p class="caption">Science Center</p>
           </div>
           <div class="image-container">
-            <div class="rounded-image">
+            <div class="rounded-image home-img">
               <img
                 src="assets/harvard_yard.jpg"
                 alt="revou"
@@ -120,7 +152,7 @@
             <p class="caption">Harvard Yard</p>
           </div>
           <div class="image-container">
-            <div class="rounded-image">
+            <div class="rounded-image home-img">
               <img
                 src="assets/widener_library.jpg"
                 alt="revou"
@@ -131,8 +163,6 @@
             </div>
             <p class="caption">Widener Library</p>
           </div>
-          
-          
         </div>
       </section>
 
@@ -149,10 +179,11 @@
 
               <label>Gender:</label>
               <label
-                ><input type="radio" name="gender" value="Male" required/> Male</label
+                ><input type="radio" name="gender" value="Male" required />
+                Male</label
               >
               <label
-                ><input type="radio" name="gender" value="Female" required/>
+                ><input type="radio" name="gender" value="Female" required />
                 Female</label
               >
 
@@ -162,21 +193,34 @@
               <button type="submit" id="submitButton">Submit</button>
             </form>
           </div>
-          <div  id="displayContainer" class="display-container">
+          <div id="displayContainer" class="display-container">
             <div class="display-content">
-              <p><span class="label">Current Time:</span> <span class="value">...</span></p>
-              <p><span class="label">Name:</span> <span class="value">...</span></p>
-              <p><span class="label">Birthday:</span> <span class="value">...</span></p>
-              <p><span class="label">Gender:</span> <span class="value">...</span></p>
-              <p><span class="label">About:</span> <span class="value">...</span></p>
+              <p>
+                <span class="label">Current Time:</span>
+                <span class="value">...</span>
+              </p>
+              <p>
+                <span class="label">Name:</span> <span class="value">...</span>
+              </p>
+              <p>
+                <span class="label">Birthday:</span>
+                <span class="value">...</span>
+              </p>
+              <p>
+                <span class="label">Gender:</span>
+                <span class="value">...</span>
+              </p>
+              <p>
+                <span class="label">About:</span> <span class="value">...</span>
+              </p>
             </div>
           </div>
         </div>
       </section>
     </div>
     <footer class="footer">
-        <p class="footer-text">Created By Christopher Russell</p>
-      </footer>
-      <script src="js/script.js"></script>
+      <p class="footer-text">Created By Christopher Russell</p>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
